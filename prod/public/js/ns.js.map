@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "ns.js",
+  "sourceRoot": "./",
+  "sources": [
+    "ns.coffee"
+  ],
+  "names": [],
+  "mappings": "AAEM,MAAM,CAAC"
+}

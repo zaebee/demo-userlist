@@ -1,0 +1,33 @@
+<td>
+  {{#if editing}}
+    <div class="form-group {{#if errors.name}}has-error{{/if}}">
+      <input name="name" class="form-control" placeholder="Сергей Кузнецов" value="{{name}}">
+      {{#if errors.name}}
+      <span class="help-block">{{errors.name}}</span>
+    </div>
+    {{/if}}
+  {{else}}
+    {{name}}
+  {{/if}}
+</td>
+<td>
+  {{#if editing}}
+    <div class="form-group {{#if errors.phone}}has-error{{/if}}">
+      <input name="phone" class="form-control" placeholder="7-871-501-11-12" value="{{phone}}">
+      {{#if errors.phone}}
+      <span class="help-block">{{errors.phone}}</span>
+      {{/if}}
+    </div>
+  {{else}}
+    {{phone}}
+  {{/if}}
+</td>
+<td>
+  {{#if editing}}
+    <a href="#" class="btn btn-default btn-save">Сохранить</a>
+    <a href="#" class="btn btn-danger btn-cancel">Отменить</a>
+  {{else}}
+    <a href="#" class="btn btn-default btn-edit">Редактировать</a>
+    <a href="#" class="btn btn-danger btn-remove">Удалить</a>
+  {{/if}}
+</td>
